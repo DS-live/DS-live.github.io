@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>WWE PPV LIVE </title>
+    <link href="https://kanbisai.github.io/back/BLK.jpg" rel="shortcut icon">
+    <link href="//vjs.zencdn.net/8.16.1/video-js.min.css" rel="stylesheet">
+    <script src="//vjs.zencdn.net/8.16.1/video.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <style>
+        .video-js .vjs-tech {
+            margin: auto;
+            position: relative !important;
+        }
+        .main{
+            width: 960px;
+            margin: auto;
+            color:white;font-size:25px;
+        }
+        .lang{
+            font-size:17px;
+        }
+        .wangpan{
+            line-height: 60px;
+            font-size:27px;
+            text-align: center;
+            color: rgb(0, 149, 255);
+        }
+        a{
+            color:blue;
+            text-align: center;
+        }
+        body{
+            background-color: black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body">
+    <div class="main">
+        <p>【直播】WWE Crown Jewel 2024/11/03 01:00 (GMT+8)</p>
+        <div>
+            <video id="myVideo" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="auto"
+                data-setup='{}' style='width:100%;height:100%'>
+                <source id="source"
+                    src="https://cn-hncs-cm-03-12.bilivideo.com/live-bvc/805888/live_23755234_bs_9360583_2500/index.m3u8?expires=1728171395&len=0&oi=0x24098a4c94437eb09db6d6a8d7f9587f&pt=web&qn=250&trid=1007499512c49fa62bc0117c46a1016701bf&sigparams=cdn,expires,len,oi,pt,qn,trid&cdn=cn-gotcha01&sign=6218b1fcc44b09203d49198c964ee491&site=e5e4a092f2ed45203c3e3bb686342462&free_type=0&mid=385212573&sche=ban&bvchls=1&sid=cn-hncs-cm-03-12&chash=1&bmt=1&sg=lr&trace=65&isp=cm&rg=Central&pv=Hubei&score=12&origin_bitrate=1161063&sl=2&source=puv3_onetier&flvsk=49b2297e01227757bd727ae747094164&suffix=2500&hot_cdn=264&p2p_type=1&qp=de_0&sk=f3edee0d0b70b2dffe8f5aa90c7cb899&deploy_env=prod&pp=rtmp&vd=nc&zoneid_l=151388163&sid_l=live_23755234_bs_9360583_2500&src=puv3&order=2"
+                    type="application/x-mpegURL">
+                </source>
+            </video>
+
+            <div class="lang">
+                <span>选择语言：</span>
+                <select class="select">
+                    <option value="1"> 英文解说1080P</option>
+                    <option value="2"> 中文解说1080P</option>
+                </select>
+            </div>
+        </div>
+    </div>
+<hr>
+<div align="center">
+    
+</div>
+                <a> WWE PPV 永久直播链接（如更换新的会在此处发布）</a> <br>
+      <br>
+</body>
+<script>
+    let myVideo = null;
+    window.onload = function () {
+        myVideo = videojs('myVideo', {
+            controls: true,
+            bigPlayButton: true,
+            textTrackDisplay: false,
+            posterImage: false,
+            errorDisplay: false,
+        })
+        changeVideo(videoData.url1)
+    }
+    let videoData = {
+        url1: 'https://fcb4973ca48ba0015b918d34e0679ffc.h2.smtcdns.net/d1--cn-gotcha204-3.bilivideo.com/live-bvc/313795/live_23413452_bs_1395000_2500/index.m3u8?expires=1728171420&len=0&oi=0x24098a4c94437eb09db6d6a8d7f9587f&pt=web&qn=250&trid=1007726e1fd5fb9db2080798522a296701bf&sigparams=cdn,expires,len,oi,pt,qn,trid&cdn=cn-gotcha204&sign=18db32647090d6cd6c0407caa896a46e&site=973b7a03a3d8603ee895841e8f66ccd0&free_type=0&mid=385212573&sche=ban&bvchls=1&trace=64&isp=cm&rg=Central&pv=Hubei&qp=de_0&score=11&hot_cdn=57345&source=puv3_onetier&sk=64148f43cc54f9b2eedf1cd4faf60827&origin_bitrate=1143444&sl=1&pp=rtmp&suffix=2500&flvsk=fb3b40586ccc068c17d1c259194bc969&deploy_env=prod&p2p_type=1&vd=bc&src=puv3&order=2&TxLiveCode=cold_stream&TxDispType=3&svr_type=live_oc&tencent_test_client_ip=125.36.101.179&dispatch_from=OC_MGR116.196.151.99&utime=1728167962320',
+        url2: 'https://cn-hncs-cm-03-12.bilivideo.com/live-bvc/805888/live_23755234_bs_9360583_2500/index.m3u8?expires=1728171395&len=0&oi=0x24098a4c94437eb09db6d6a8d7f9587f&pt=web&qn=250&trid=1007499512c49fa62bc0117c46a1016701bf&sigparams=cdn,expires,len,oi,pt,qn,trid&cdn=cn-gotcha01&sign=6218b1fcc44b09203d49198c964ee491&site=e5e4a092f2ed45203c3e3bb686342462&free_type=0&mid=385212573&sche=ban&bvchls=1&sid=cn-hncs-cm-03-12&chash=1&bmt=1&sg=lr&trace=65&isp=cm&rg=Central&pv=Hubei&score=12&origin_bitrate=1161063&sl=2&source=puv3_onetier&flvsk=49b2297e01227757bd727ae747094164&suffix=2500&hot_cdn=264&p2p_type=1&qp=de_0&sk=f3edee0d0b70b2dffe8f5aa90c7cb899&deploy_env=prod&pp=rtmp&vd=nc&zoneid_l=151388163&sid_l=live_23755234_bs_9360583_2500&src=puv3&order=2',  
+    }
+
+    let changeVideo = function (vdoSrc) {
+        if (/\.m3u8$/.test(vdoSrc)) {
+            myVideo.src({
+                src: vdoSrc,
+                type: 'application/x-mpegURL'
+            })
+        } else {
+            myVideo.src(vdoSrc)
+        }
+        myVideo.load();
+        myVideo.play();
+    }
+    $('.select').on('change', function () {
+        let val = $(this).val();
+        switch (val) {
+            case '1': changeVideo(videoData.url1); break;
+            case '2': changeVideo(videoData.url2); break;
+            default: changeVideo(videoData.url3);
+        }   <!--丨-->
+    })
+</script>
+</html>
